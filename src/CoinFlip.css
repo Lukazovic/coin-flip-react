@@ -1,0 +1,21 @@
+.CoinFlip {
+  display: list-item;
+  text-align: center;
+  align-items: center;
+  align-self: auto;
+}
+
+.CoinFlip-button {
+  background-color: yellow;
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+  max-width: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.CoinFlip-button:hover {
+  opacity: 0.8;
+  border-color: rgba(0, 0, 0, 0.719);
+}
