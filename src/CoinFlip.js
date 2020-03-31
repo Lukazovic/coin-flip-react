@@ -18,23 +18,18 @@ class CoinFlip extends Component{
       totalCount: 0, 
       headCount: 0, 
       tailCount: 0, 
-      currentCoin: 'heads'}
+      currentCoin: null}
     this.handleClick = this.handleClick.bind(this)
   }
   flipCoin(){
     const newCoin = choice(this.props.coins)
     this.setState(oldState => {
-      let newState = {
-        ...oldState,
+      return {
         currentCoin: newCoin,
-        totalCount: oldState.totalCount + 1
+        totalCount: oldState.totalCount + 1,
+        headCount: oldState.headCount + (newCoin.side === 'heads' ? 1 : 0),
+        tailCount: oldState.tailCount + (newCoin.side === 'tails' ? 1 : 0)
       }
-      if (newCoin.side === 'heads'){
-        newState.headCount += 1
-      } else {
-        newState.tailCount += 1
-      }
-      return newState
     })
   }
   handleClick(event){
