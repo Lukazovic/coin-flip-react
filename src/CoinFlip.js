@@ -27,7 +27,6 @@ class CoinFlip extends Component{
         <Coin coin={this.state.option} className="CoinFlip-coin"/>
         <p>Out of {this.state.totalCount}, there have been {this.state.headCount} heads and {this.state.tailCount} tails </p>
         <button onClick={this.handleClick} className="CoinFlip-button">Flip</button>
-        
       </div>
     )
   }
