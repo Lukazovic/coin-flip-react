@@ -39,7 +39,7 @@ class CoinFlip extends Component{
     return (
       <div className="CoinFlip">
         <h1>Coin Flip Game</h1>
-        {/* <Coin coin={this.state.currentCoin} className="CoinFlip-coin"/> */}
+        {this.state.currentCoin && <Coin info={this.state.currentCoin} className="CoinFlip-coin"/>}
         <p>Out of {this.state.totalCount}, there have been {this.state.headCount} heads and {this.state.tailCount} tails </p>
         <button onClick={this.handleClick} className="CoinFlip-button">Flip</button>
       </div>
