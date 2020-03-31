@@ -1,13 +1,4 @@
-.Coin-container {
-  display: flex;
+.Coin img {
   width: 200px;
   height: 200px;
-  justify-content: center;
-  align-items: center;
-}
-
-.Coin-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
 }
